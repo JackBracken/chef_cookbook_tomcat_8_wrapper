@@ -14,3 +14,7 @@ end
 tomcat_service 'tomcat' do
   action [:enable, :start]
 end
+
+service 'tomcat_tomcat' do
+  action [:enable, :start]
+end
