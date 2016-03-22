@@ -12,5 +12,5 @@ tomcat_install 'tomcat'  do
 end
 
 tomcat_service 'tomcat' do
-  action :start
+  action [:enable, :start]
 end
